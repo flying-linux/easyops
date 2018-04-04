@@ -1,0 +1,14 @@
+---
+proc_list: []
+port_list: []
+start_script: ""
+stop_script: ""
+restart_script: ""
+install_prescript: ""
+install_postscript: ""
+update_prescript: ""
+update_postscript: ""
+rollback_prescript: ""
+rollback_postscript: ""
+user: ""
+...
