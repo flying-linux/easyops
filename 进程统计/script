@@ -18,7 +18,8 @@
 _top10Proc()
 {
     echo "进程数最多的10个进程："
-    ps axww | grep -v "\[" | awk '{print $5, $6, $7, $8}' | uniq -c | sort -nr | head
+     ps -aux |awk '$11!~/\[.*/{for(i=11;i<=NF;i++)printf $i" ";printf "\n"}'|awk '{++a[$0]}END{for(i in a)print a[i],i}'|sort -rn|head
+
 }
 
 
